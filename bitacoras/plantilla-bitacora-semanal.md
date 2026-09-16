@@ -72,11 +72,11 @@ Escoge una ejecucion, recorrido o caso representativo y trazalo paso a paso.
 Incluye los valores importantes despues de cada paso.
 
 | Paso | Estado de los datos o estructura | Decision o resultado |
-|---|---|---|
-| 1 | [Estado inicial] | [Que ocurre] |
-| 2 | [Siguiente estado] | [Que ocurre] |
-| 3 | [Siguiente estado] | [Que ocurre] |
-| 4 | [Estado final] | [Que ocurre] |
+|------|----------------------------------|----------------------|
+| 1    | [Estado inicial]                 | [Que ocurre]         |
+| 2    | [Siguiente estado]               | [Que ocurre]         |
+| 3    | [Siguiente estado]               | [Que ocurre]         |
+| 4    | [Estado final]                   | [Que ocurre]         |
 
 **Completa o agrega filas si es necesario.** Si trabajaste con una estructura,
 dibuja su estado en cada paso o inserta aqui una imagen legible.
