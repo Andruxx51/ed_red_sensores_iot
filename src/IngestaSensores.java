@@ -17,7 +17,7 @@ import java.io.IOException;
 
 public class IngestaSensores {
 
-    private static final String ARCHIVO = "lecturas_ampliadas.csv";
+    private static final String ARCHIVO = "data/lecturas_ampliadas.csv";
     private static final int CAMPOS_ESPERADOS = 5;
 
     private static int descartadasPorFormato = 0;
@@ -25,7 +25,8 @@ public class IngestaSensores {
 
     public static void main(String[] args) throws IOException {
 
-        RepositorioLecturas repositorio = new RepositorioLecturas();
+        // CORRECCIÓN: Según la guía, le pasamos 10 como capacidad inicial (Fase 1)
+        RepositorioLecturas repositorio = new RepositorioLecturas(10);
         AnalizadorMatriz analizador = new AnalizadorMatriz();
 
         cargarArchivo(repositorio, analizador);
@@ -35,8 +36,11 @@ public class IngestaSensores {
         System.out.println("Lecturas almacenadas:      " + repositorio.tamano());
         System.out.println("Descartadas por formato:   " + descartadasPorFormato);
         System.out.println("Descartadas por rango:     " + descartadasPorRango);
+
+        // Si ya programaste este método en tu Repositorio, esto funcionará perfecto
         System.out.println();
         System.out.println("PM2.5 promedio (repositorio): " + repositorio.promedioPm25());
+
         System.out.println();
         System.out.println("=== PERFIL HORARIO DE LA CIUDAD ===");
         for (int h = 0; h < 24; h++) {

@@ -6,8 +6,6 @@
    discutimos en la Semana 1: en vez de arrastrar cinco
    variables sueltas por todos los metodos, una lectura viaja
    completa dentro de un objeto.
-
-   Estudiala antes de usarla. La vas a ver las doce semanas.
    ============================================================ */
 
 public class LecturaSensor {
@@ -63,6 +61,6 @@ public class LecturaSensor {
     @Override
     public String toString() {
         return idSensor + " | " + timestamp
-             + " | T=" + temperatura + " | H=" + humedad + " | PM=" + pm25;
+                + " | T=" + temperatura + " | H=" + humedad + " | PM=" + pm25;
     }
 }
