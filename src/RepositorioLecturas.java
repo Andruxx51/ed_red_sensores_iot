@@ -14,7 +14,7 @@ public class RepositorioLecturas {
     private int copiasRealizadas = 0;
     private int redimensionamientos = 0;
 
-    // FASE 1: Constructor que recibe la capacidad inicial fija (ej. 10)
+    // FASE 1: Constructor que recibe la capacidad inicial fija
     public RepositorioLecturas(int capacidadInicial) {
         lecturas = new LecturaSensor[capacidadInicial];
         cantidad = 0;
@@ -36,7 +36,7 @@ public class RepositorioLecturas {
     }
 
     /**
-     * FASE 3: OBTENER
+     * FASE 3:
      * Devuelve la lectura en la posición indicada, validando límites.
      */
     public LecturaSensor obtener(int posicion) {
@@ -47,7 +47,7 @@ public class RepositorioLecturas {
     }
 
     /**
-     * FASE 3: TAMAÑO
+     * FASE 3:
      * Devuelve la cantidad real de elementos almacenados (no la capacidad física).
      */
     public int tamano() {
@@ -55,7 +55,7 @@ public class RepositorioLecturas {
     }
 
     /**
-     * FASE 3: ELIMINAR (Estrategia de Compactación)
+     * FASE 3:
      * Elimina moviendo los elementos a la izquierda para no dejar huecos
      * y limpia la última referencia duplicada.
      */
@@ -70,7 +70,7 @@ public class RepositorioLecturas {
     }
 
     /**
-     * FASE 3: BUSCAR POR ESTACIÓN
+     * FASE 3:
      * Recorre secuencialmente el arreglo buscando la primera coincidencia por ID.
      */
     public LecturaSensor buscarPorEstacion(String idSensor) {
@@ -83,7 +83,7 @@ public class RepositorioLecturas {
     }
 
     /**
-     * FASE 3: ACTUALIZAR
+     * FASE 3:
      * Reemplaza una lectura existente validando que la posición sea válida.
      */
     public void actualizar(int posicion, LecturaSensor nueva) {
@@ -93,7 +93,7 @@ public class RepositorioLecturas {
     }
 
     /**
-     * FASE 2 y 2.1: REDIMENSIONAR Y MEDIR
+     * FASE 2 y 2.1:
      * Duplica la capacidad del arreglo al llenarse, copiando los datos
      * y sumando métricas para comparar la eficiencia en la bitácora.
      */
