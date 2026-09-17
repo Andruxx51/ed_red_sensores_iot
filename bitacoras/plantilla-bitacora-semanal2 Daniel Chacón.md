@@ -1,4 +1,4 @@
-# Bitacora individual - Semana [XX]
+# Bitacora individual - Semana [2]
 
 > Copia este archivo y renombralo como `s[XX]-[tu-nombre].md`.
 > Completa todas las secciones con tus propias palabras. Esta bitacora es
